@@ -24,7 +24,7 @@ export class CategoriesService {
 
   create(data: CreateCategoryDto) {
     this.counterId = this.categories.length + 1;
-    const newCategory = {
+    const newCategory: Category = {
       id: this.counterId,
       ...data,
     };
